@@ -22,12 +22,14 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+html, body {
+  height: 100%;
+  width: 100%;
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 h1 {
@@ -87,12 +89,14 @@ ul{
 }
 
 .content{
-    height: 100vh;
     background: yellow;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .main-title{
