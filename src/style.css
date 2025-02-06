@@ -79,65 +79,66 @@ button:focus-visible {
 }
 
 *{
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 ul{
-  list-style-type: style none;
-  padding: 0;
+    list-style-type: style none;
+    padding: 0;
 }
 
 .content{
-  height: 100vh;
-  background: purple;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-title{
-  font-size: 3em;
-  color: red;
+    font-size: 3em;
+    color: blue;
 }
 
 .center-text {
-  text-align: center;
-  margin: 20px 0;
+    text-align: center;
+    margin: 20px 0;
+    color: black;
 }
 
 
 .formItems{
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formItems input{
-  font-size: 28px;
-  padding: 10px 20px;
+    font-size: 28px;
+    padding: 10px 20px;
 }
 
 .formItems button{
-  font-size: 24px;
-  border: none;
-  background-color: blue;
-  color: white;
-  padding: 14px 30px;;
+    font-size: 24px;
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 14px 30px;;
 }
 
 .formItems button:hover{
-  cursor: pointer;
-  background: white;
-  color: teal;
+    cursor: pointer;
+    background: white;
+    color: teal;
 }
 
 .formItems button:active{
-  background: black;
-  color:white;
+    background: black;
+    color:white;
 }
 
 .timerDisplay{
-  font-size: 2em;
-  color: orange;
+    font-size: 2em;
+    color: red;
 }
