@@ -1,5 +1,33 @@
-<script setup>
+<script>
+export default {
+  data() {
+    return {
+      timeInput: '',
+      timeDisplay: ''
+    };
+  },
+  methods: {
+    startTimer() {
+      const timeInputValue = parseInt(this.timeInput);
+      if (timeInputValue > 0 && timeInputValue <= 60) {
+        this.timeDisplay = `Time remaining: ${timeInputValue} seconds`;
+        let time = timeInputValue;
 
+        const countdown = setInterval(() => {
+          if (time > 0) {
+            time--;
+            this.timeDisplay = `Time remaining: ${time} seconds`;
+          } else {
+            clearInterval(countdown);
+            alert("The timer has reached 0, start again?");
+          }
+        }, 1000);
+      } else {
+        alert("Please enter a valid time between 1-60 seconds)");
+      }
+    }
+  }
+};
 </script>
 
 <template>
